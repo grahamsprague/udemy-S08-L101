@@ -7,9 +7,10 @@
 >
 <ul class="group-list">
   <li class="group-list-item"
-    *ngFor="let topic of topics.controls" #topic
+    *ngFor="let topic of topics.controls; let i = index" #topic
   >
-    {{ topic.value }}
+    {{ topics.controls[i].value }}
   </li>
 </ul>
+
 </form>
