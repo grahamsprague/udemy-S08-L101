@@ -5,11 +5,11 @@
 <input type="text" class="form-control"
   (keyup.enter)="addTopic(topic)" #topic
 >
-<ul class="group-list">
-  <li class="group-list-item"
-    *ngFor="let topic of topics.controls; let i = index" #topic
+<ul class="list-group">
+  <li class="list-group-item"
+    *ngFor="let topic of topics.controls"
   >
-    {{ topics.controls[i].value }}
+    {{ topics.value }}
   </li>
 </ul>
 
