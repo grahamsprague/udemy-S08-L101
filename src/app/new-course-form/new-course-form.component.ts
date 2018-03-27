@@ -13,8 +13,8 @@ export class NewCourseFormComponent {
   });
 
   addTopic(topic: HTMLInputElement) {
-    this.topics.push(new FormControl(topic.value));
-    // console.log(this.form.get('topics'));
+    this.topics.push( new FormControl(topic.value) );
+    console.log(this.topics);
   }
 
   get topics() {
